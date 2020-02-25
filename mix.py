@@ -1,6 +1,12 @@
 from glob import glob
 from pydub import AudioSegment
 
+# based on the example
+# https://github.com/jiaaro/pydub#how-about-another-example
+#
+# 20200225
+
+
 i = 0
 for name in sorted(glob("*.mp3")):
     i = i+1
@@ -15,7 +21,7 @@ for i in range(0, len(playlist_songs)):
     songcut = playlist_songs.pop(0)
 
     # you can modify the code to add only the first 30 seconds of each song
-    # like that
+    # comment the next two lines if you want the uncropped original full-length songs in the mix
     songx = songcut
     songcut = songx[:30*1000]
 
