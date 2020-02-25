@@ -4,17 +4,22 @@ from pydub import AudioSegment
 i = 0
 for name in sorted(glob("*.mp3")):
     i = i+1
-    print str(i)+name
+    print str(i)+" "+name
 
 playlist_songs = [AudioSegment.from_mp3(mp3_file) for mp3_file in sorted(glob("*.mp3"))]
 
-print "Number of songs. "+str(len(playlist_songs))
+print "Found "+str(len(playlist_songs))+" songs."
 
 for i in range(0, len(playlist_songs)):
 
     songcut = playlist_songs.pop(0)
-    # songcut = songx[:30*1000]
-    print i
+
+    # you can modify the code to add only the first 30 seconds of each song
+    # like that
+    songx = songcut
+    songcut = songx[:30*1000]
+
+    print "Now mixing song "+str(i+1)
 
     if i == 0:
         playlist = songcut
@@ -27,6 +32,8 @@ for i in range(0, len(playlist_songs)):
 
 # hmm I wonder how long it is... ( len(audio_segment) returns milliseconds )
 playlist_length = len(playlist) / (1000*60)
+
+print "The mix playtime is "+str(playlist_length)+" minutes."
 
 # lets save it!
 with open("%s_minutes-mix-192kbps.mp3" % playlist_length, 'wb') as out_f:

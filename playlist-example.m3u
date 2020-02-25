@@ -1,11 +1,10 @@
 #EXTM3U
 #EXTINF:214,Alexis Korner & CCS - Whole Lotta Love
-/media/benutzer/JUKEBOX/Rock/Alexis Korner & CCS - Whole Lotta Love (1970).mp3
+# /media/benutzer/JUKEBOX/Rock/Alexis Korner & CCS - Whole Lotta Love (1970).mp3
+jukebox/Alexis Korner & CCS - Whole Lotta Love (1970).mp3
 #EXTINF:390,Lamont Dozier - Going Back To My Roots
-/media/benutzer/JUKEBOX/Disco/Disco 70s/Disco Late 70ies - Abraxas-Pal Joe-Tiffany-Dschungel/Lamont Dozier - Going Back To My Roots.mp3
-# ...
+#/media/benutzer/JUKEBOX/Disco/Disco 70s/Disco Late 70ies - Abraxas-Pal Joe-Tiffany-Dschungel/Lamont Dozier - Going Back To My Roots.mp3
+jukebox/Lamont Dozier - Going Back To My Roots.mp3
 #EXTINF:181,Inga & Wolf - Gute Nacht, Freunde
-/media/benutzer/JUKEBOX/Deutsche Welle/Various Artists/Inga & Wolf - Gute Nacht, Freunde.mp3
-#EXTINF:172,Reinhard May - Gute Nacht, Freunde
-/media/benutzer/JUKEBOX/Deutsche Welle/Reinhard Mey/Reinhard May - Gute Nacht Freunde.mp3
-
+#/media/benutzer/JUKEBOX/Deutsche Welle/Various Artists/Inga & Wolf - Gute Nacht, Freunde.mp3
+jukebox/Inga & Wolf - Gute Nacht, Freunde.mp3
