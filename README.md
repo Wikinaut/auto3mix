@@ -1,9 +1,9 @@
 # auto3mix
 A toolchain for creating crossfade-mixed single mp3 files from playlists
 
+Featured at [Berlin Hack & Tell #78, 26.02.2020](https://www.meetup.com/Berlin-Hack-and-Tell/events/268803833/).
+
 <img src="https://raw.githubusercontent.com/Wikinaut/auto3mix/master/auto3mix.png" width=1400>
-
-
 
 ### Original chart version, kept for historical reasons only
 
