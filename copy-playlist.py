@@ -5,10 +5,10 @@
 #
 # based on ideas from https://forum.videolan.org/viewtopic.php?t=114141
 
+import os
 import os.path
-import shutil
 import sys
-
+# import shutil
 
 def main():
 
@@ -23,14 +23,21 @@ def main():
     j = 100
     for i, line in enumerate(open(playlist_file)):
         try:
+
             if line.startswith('#'):
                 # Skip m3u comments
                 continue
+
             else:
-                s = line.rstrip()
-                shutil.copy2(s, os.path.join(output_dir, '%06d__%s' %
-                                            (j, os.path.basename(s))))
+
+                fn = line.rstrip()
+
+                # make symbolic link - or shutil.copy2(src,dst)
+                os.symlink(os.path.abspath(fn),
+                    os.path.abspath(os.path.join(output_dir, '%06d__%s' % (j,os.path.basename(fn)))))
+
                 j = j + 100
+
         except IOError as e:
             sys.stderr.write('warning: %s\n' % e)
     return 0
